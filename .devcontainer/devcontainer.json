@@ -1,6 +1,5 @@
 {
   "name": "codespace-ai",
-  "image": "ghcr.io/devcontainers/images/universal:2",
   "customizations": {
     "vscode": {
       "extensions": ["Continue.continue"]
