@@ -3,7 +3,7 @@ models:
   - id: gpt-4o-mini
     provider: openia
     baseUrl: https://models.interface.ai.azure.com
-    apiKey : ${TOK.MRC.01}
+    apiKey : ${OPENA_I_API}
     tabAutocompleteModel: gpt-4o-mini
     defaultModel: gpt-4o-mini
     
