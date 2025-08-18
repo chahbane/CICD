@@ -1,0 +1,11 @@
+{
+  "name": "codespace-ai",
+  "image": "mrc.microsoft.com/devcontainers/universal:2",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Continue.continue"
+      ]
+    }
+  }
+}
