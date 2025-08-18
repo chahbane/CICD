@@ -1,8 +1,8 @@
 # / .continue/config.yaml
 models:
   - id: gpt-4o-mini
-    provider: openia
-    baseUrl: https://models.interface.ai.azure.com
+    provider: openai
+    baseUrl: https://models.inference.ai.azure.com
     apiKey : ${OPENA_I_API}
     tabAutocompleteModel: gpt-4o-mini
     defaultModel: gpt-4o-mini
