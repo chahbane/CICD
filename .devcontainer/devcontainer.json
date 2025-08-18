@@ -1,11 +1,9 @@
 {
   "name": "codespace-ai",
-  "image": "mrc.microsoft.com/devcontainers/universal:2",
+  "image": "ghcr.io/devcontainers/images/universal:2",
   "customizations": {
     "vscode": {
-      "extensions": [
-        "Continue.continue"
-      ]
+      "extensions": ["Continue.continue"]
     }
   }
 }
