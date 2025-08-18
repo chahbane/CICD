@@ -2,7 +2,6 @@
 models:
   - id: gpt-4o-mini
     provider: openai
-    baseUrl: https://models.inference.ai.azure.com
     apiKey : ${OPENA_I_API}
     tabAutocompleteModel: gpt-4o-mini
     defaultModel: gpt-4o-mini
