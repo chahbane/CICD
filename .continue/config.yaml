@@ -8,7 +8,7 @@ models:
     provider: openai
     model: gpt-4o-mini # modèle dispo sur GitHub Models
     baseUrl: https://models.inference.ai.azure.com
-    apiKey: ${GIT_HUB_MODELS_TOKEN}
+    apiKey: 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
 
 defaultModel: gpt-4o-mini
 tabAutocompleteModel: gpt-4o-mini
