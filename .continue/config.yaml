@@ -1,14 +1,38 @@
-name: GPT-4o via GitHub Models
-version: "1"
-schema: "1"
-
+name: OPEN
+version: 1.0.3
+schema: v1
 models:
-  - id: gpt-4o-mini # identifiant interne (tu peux l'appeler comme tu veux)
-    name: GPT-4o Mini # nom affiché dans VSCode
-    provider: openai
-    model: gpt-4o-mini # modèle dispo sur GitHub Models
-    baseUrl: https://models.inference.ai.azure.com
-    apiKey: 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
-
-defaultModel: gpt-4o-mini
-tabAutocompleteModel: gpt-4o-mini
+  - uses: relace/instant-apply
+    with:
+      RELACE_API_KEY: ${{ secrets.RELACE_API_KEY }}
+  - uses: anthropic/claude-4-sonnet
+    with:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    override:
+      roles:
+        - chat
+        - edit
+        - apply
+  - uses: anthropic/claude-4-1-opus
+    with:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    override:
+      roles:
+        - chat
+        - edit
+        - apply
+  - uses: mistral/codestral
+    with:
+      MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+    override:
+      roles:
+        - autocomplete
+  - uses: openai/gpt-4.1
+    with:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+context:
+  - uses: continuedev/diff-context
+  - uses: continuedev/terminal-context
+  - uses: continuedev/file-context
+mcpServers:
+  - uses: upstash/context7-mcp
