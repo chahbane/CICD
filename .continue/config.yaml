@@ -1,8 +1,14 @@
-# / .continue/config.yaml
+name: GPT-4o via GitHub Models
+version: 1
+schema: 1
+
 models:
-  - id: gpt-4o-mini
+  - id: gpt-4o-mini # identifiant interne (tu peux l'appeler comme tu veux)
+    name: GPT-4o Mini # nom affiché dans VSCode
     provider: openai
-    apiKey : ${GIT_HUB_MODELS_TOKEN}
-    tabAutocompleteModel: gpt-4o-mini
-    defaultModel: gpt-4o-mini
-    
+    model: gpt-4o-mini # modèle dispo sur GitHub Models
+    baseUrl: https://models.inference.ai.azure.com
+    apiKey: ${GIT_HUB_MODELS_TOKEN}
+
+defaultModel: gpt-4o-mini
+tabAutocompleteModel: gpt-4o-mini
