@@ -2,7 +2,7 @@
 models:
   - id: gpt-4o-mini
     provider: openai
-    apiKey : ${OPENA_I_API}
+    apiKey : ${GIT_HUB_MODELS_TOKEN}
     tabAutocompleteModel: gpt-4o-mini
     defaultModel: gpt-4o-mini
     
